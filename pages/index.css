@@ -1,0 +1,168 @@
+@import url(/vendor/normalize.css);
+@import url(/vendor/fonts/fonts.css);
+/* @import url(/blocks/page.css);
+@import url(/blocks/header.css);
+@import url(/blocks/footer.css);
+@import url(/blocks/content.css);
+@import url(/blocks/card.css); */
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  max-width: 880px;
+  width: 100%;
+  border-bottom: 1px solid #545454;
+  margin: 45px auto 0;
+}
+
+.header__logo {
+  margin-bottom: 45px;
+}
+
+.content {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.profile__info {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-rows: minmax(min-content, max-content);
+  grid-template-areas:
+    "name edit-button"
+    "description description";
+  gap: 7px 18px;
+  padding: 22px 0 21px 30px;
+  align-items: center;
+}
+
+.profile__image {
+  height: 120px;
+  width: 120px;
+}
+
+.profile__name {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0;
+  grid-area: name;
+}
+
+.profile__edit-button {
+  background: transparent url(/images/Edit-button.svg) center no-repeat;
+  height: 24px;
+  width: 24px;
+  grid-area: edit-button;
+  border: 1px solid white;
+}
+
+.profile__subtitle {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  grid-area: description;
+}
+
+.profile__add-button {
+  background: transparent url(/images/Add-button.svg) center no-repeat;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+}
+
+.cards {
+  max-width: 880px;
+  width: 100%;
+  margin: auto;
+}
+
+.cards__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  margin: 0;
+  padding: 50px 0 0;
+  gap: 20px 17px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__image {
+  height: 282px;
+  width: 282px;
+}
+
+.card__description {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  max-width: 282px;
+}
+
+.card__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__like-button {
+  background: transparent url(/images/Heart.svg) center no-repeat;
+  width: 21px;
+  height: 18px;
+  border: none;
+}
+
+.footer {
+  max-width: 880px;
+  width: 100%;
+  margin: 60px auto 67px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #545454;
+}
+
+@media screen and (max-width: 770px) {
+  .profile__name {
+    font-size: 22px;
+  }
+  .profile__subtitle {
+    font-size: 14px;
+  }
+  .profile__add-button {
+    width: 50px;
+  }
+}
