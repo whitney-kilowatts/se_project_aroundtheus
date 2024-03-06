@@ -48,7 +48,7 @@
 }
 
 .card__like-button {
-  background: transparent url(/images/Heart.svg) center no-repeat;
+  background: transparent url(../images/Heart.svg) center no-repeat;
   width: 21px;
   height: 18px;
   border: none;
