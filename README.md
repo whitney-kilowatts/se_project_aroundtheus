@@ -10,4 +10,4 @@
 - Flexbox
 - BEM organization
 
-[Link to view the page](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+[Link to view the page](https://whitney-kilowatts.github.io/se_project_aroundtheus/)
