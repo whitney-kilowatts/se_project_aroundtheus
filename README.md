@@ -9,5 +9,8 @@
 - CSS grid
 - Flexbox
 - BEM organization
+- Semantic Tags
 
 [Link to view the page](https://whitney-kilowatts.github.io/se_project_aroundtheus/)
+
+[Link to video description](https://vimeo.com/920338618?share=copy)
